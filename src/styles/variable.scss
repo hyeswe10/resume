@@ -1,0 +1,19 @@
+:root {
+    --color-point: #1E3A5F;   // 포인트 (제목·구분선·강조)
+    --main-text: #1F2937;    // 본문 텍스트
+    --sub-text: #6B7280; // 보조 텍스트
+    --color-line: #E5E7EB;    // 구분선·테두리
+    --color-bg: #ffffff;      // 배경
+
+    //사이드바, 스킬버튼
+    --side-bg: #F7F8FA; // 사이드바 배경
+    --skill-btn: #EEF2F7; // 스킬버튼
+    --skill-border: #DCE3EC; //스킬버튼 테두리
+    --skill-text: #3A5F88; //스킬버튼 텍스트
+
+    //헤더
+    --head-bg: #1E3A5F; // 헤더 배경
+    --head-desc: #B9C7D9; // 프론트엔드
+    --head-tel: #CDD8E6; // 연락처
+    --cover-btn: #7E93AB; // 자기소개서 버튼 테두리
+}
