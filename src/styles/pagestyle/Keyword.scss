@@ -1,0 +1,38 @@
+#keyword{
+    width: 100%;
+    @include flex-layout();
+    padding: 5rem 0;
+    gap: 5rem;
+    .line{
+        width: 4.5rem;
+        height: 0.7rem;
+        background-color: var(--color-point);
+        border-radius: 1.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+        color: var(--color-point);
+    }
+    > div{
+        width: 25%;
+        @include flex-layout($align:flex-start);
+        flex-direction: column;
+        padding: 2.5rem;
+        gap: 1rem;
+        border: 1px solid var(--skill-border);
+        border-radius: 2rem;
+        >div{
+            @include flex-layout();
+            gap: 1rem;
+            padding-top: 0.5rem;
+            p{
+                color: var(--skill-text);
+                font-size: 1.3rem;
+                border: 1px solid var(--skill-border);
+                background-color: var(--skill-btn);
+                padding: 0.5rem 1.5rem;
+                border-radius: 0.6rem;
+            }
+        }
+    }
+}
