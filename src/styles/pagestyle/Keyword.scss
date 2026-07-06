@@ -3,6 +3,7 @@
     @include flex-layout();
     padding: 5rem 0;
     gap: 5rem;
+    word-break: keep-all;
     .line{
         width: 4.5rem;
         height: 0.7rem;

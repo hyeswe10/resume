@@ -1,0 +1,280 @@
+#main-info{
+    @include flex-layout($align:flex-start,$justify:space-between);
+    width: 100%;
+    padding: 3rem 15rem;
+    .left{
+        width: 25%;
+        padding: 3rem;
+        border: 1px solid var(--side-border);
+        background-color: var(--side-bg);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h3{
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.6rem;
+            color: var(--color-point);
+            align-self: flex-start;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 82%;
+                height: 3px;
+                background-color: var(--color-point);
+                border-radius: 3px;
+            }
+        }
+        .skills{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            > div{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                h4{
+                    font-size: 1.5rem;
+                    color: var(--skill-sub);
+                }
+                .btn{
+                    display: flex;
+                    gap: 0.5rem;
+                    p{
+                        font-size: 1.4rem;
+                        padding: 0.5rem 1rem;
+                        background-color: #ffffff;
+                        border: 1px solid var(--side-border);
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+        .education{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            > div{
+                span{
+                    color: var(--skill-sub);
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                    padding-top: 0.3rem;
+                }
+            }
+        }
+        .self{
+            .study{
+                padding-top: 1.2rem;
+                li{
+                    list-style: disc;
+                    margin-left: 1.5rem;
+                    font-size: 1.5rem;
+                    color: var(--color-point);
+                }
+            }
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        h3{
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.6rem;
+            color: var(--color-point);
+            align-self: flex-start;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 82%;
+                height: 3px;
+                background-color: var(--color-point);
+                border-radius: 3px;
+            }
+        }
+        > div{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .about-me{
+            p{
+                padding-top: 1.5rem;
+                font-size: 1.6rem;
+                color: var(--main-text);
+                line-height: 3rem;
+            }
+        }
+        .team{
+            .desc{
+                position: relative;
+                display: flex;
+                .left-line{
+                    position: absolute;
+                    left: 4px;
+                    top: 6px;
+                    bottom: 6px;
+                    width: 2px;
+                    background-color: var(--color-line);
+                }
+                .right-desc{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    padding-left: 4rem;
+                    padding-top: 1.5rem;
+                    .pro-1,.pro-2{
+                        position: relative;
+                    }
+                    h4{
+                        position: relative;
+                        display: inline-block;
+                        font-size: 2.3rem;
+                        color: var(--color-point);
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: -4rem;
+                            top: 50%;
+                            transform: translate(calc(-50% + 5px), -50%);
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--color-point);
+                        }
+                        span{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            color: var(--sub-text);
+                        }
+                    }
+                    .pro-1,.pro-2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.7rem;
+                        p{
+                            font-size: 1.5rem;
+                        }
+                        ul{
+                            padding-left: 2.5rem;
+                            li{
+                                list-style: disc;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .tools{
+                            border-top: 1px solid var(--color-line);
+                            display: flex;
+                            gap: 1rem;
+                            padding-top: 1.5rem;
+                            margin-top: 1rem;
+                            p{
+                                font-size: 1.3rem;
+                                color: var(--color-point);
+                                background-color: var(--skill-btn);
+                                border: 1px solid var(--skill-border);
+                                padding: 0.5rem 1rem;
+                                border-radius: 0.7rem;
+                            }
+                            .title{
+                                background-color: transparent;
+                                border: none;
+                                font-size: 1.4rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .study{
+            .desc{
+                position: relative;
+                display: flex;
+                .left-line{
+                    position: absolute;
+                    left: 4px;
+                    top: 6px;
+                    bottom: 6px;
+                    width: 2px;
+                    background-color: var(--color-line);
+                }
+                .right-desc{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    padding-left: 4rem;
+                    padding-top: 1.5rem;
+                    h4{
+                        position: relative;
+                        display: inline-block;
+                        font-size: 2.3rem;
+                        color: var(--color-point);
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: -4rem;
+                            top: 50%;
+                            transform: translate(calc(-50% + 5px), -50%);
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--color-point);
+                        }
+                        span{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            color: var(--sub-text);
+                        }
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.7rem;
+                    p{
+                        font-size: 1.5rem;
+                    }
+                    ul{
+                        padding-left: 2.5rem;
+                        li{
+                            list-style: disc;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .tools{
+                        border-top: 1px solid var(--color-line);
+                        display: flex;
+                        gap: 1rem;
+                        padding-top: 1.5rem;
+                        margin-top: 1rem;
+                        p{
+                            font-size: 1.3rem;                                color: var(--color-point);
+                            background-color: var(--skill-btn);
+                            border: 1px solid var(--skill-border);
+                            padding: 0.5rem 1rem;
+                            border-radius: 0.7rem;
+                        }
+                        .title{
+                            background-color: transparent;
+                            border: none;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
