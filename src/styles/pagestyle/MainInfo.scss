@@ -1,7 +1,9 @@
 #main-info{
-    @include flex-layout($align:flex-start,$justify:space-between);
+    @include flex-layout($align:flex-start,$justify:flex-start);
     width: 100%;
-    padding: 3rem 15rem;
+    padding: 3rem 20rem;
+    gap: 10rem;
+    padding-bottom: 20rem;
     .left{
         width: 25%;
         padding: 3rem;
@@ -10,7 +12,7 @@
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 5rem;
         h3{
             font-size: 2rem;
             position: relative;

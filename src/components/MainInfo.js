@@ -128,45 +128,7 @@ const MainInfo = () => {
                         </div>
                     </div>
                 </div>
-                <div className='improvement'>
-                    <h3>IMPROVEMENT</h3>
-                    <div className='pro-1'>
-                        <div>
-                            <span>문제</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>원인</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>해결</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>결과</span>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div className='pro-2'>
-                        <div>
-                            <span>문제</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>원인</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>해결</span>
-                            <p></p>
-                        </div>
-                        <div>
-                            <span>결과</span>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     );
