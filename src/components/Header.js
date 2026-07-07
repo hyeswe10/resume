@@ -33,7 +33,7 @@ const Header = () => {
             </div>
             <div className='right'>
                 <a href='https://hyeswe10.github.io/mportfolio' target='_blank' rel='noopener noreferrer' className='portfolio'>포트폴리오<GoArrowUpRight /></a>
-                <a href='' className='cover'>자기소개서<GoArrowUpRight /></a>
+                <a href='https://hyeswe10.github.io/cover-letter/' target='_blank' rel='noopener noreferrer' className='cover'>자기소개서<GoArrowUpRight /></a>
             </div>
         </div>
     );
